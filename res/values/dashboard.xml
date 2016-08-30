@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dashboardview.xml -->
+    <string name="menu">Menu</string>
+    <string name="offers">Offers</string>
+    <string name="liveprices">Live Prices</string>
+    <string name="locatestore">LocateStore</string>
+    <string name="loyalty">Loyalty</string>
+    
+     <!-- topbar -->
+    <string name="share_image">Share</string>
+    
+    <string name="pickone">GO AHEAD, PICK ONE!!</string>
+
+</resources>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loyalty_main_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/loyalty_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp" >
+
+            <!-- Sign up(registration) view -->
+
+            <RelativeLayout
+                android:id="@+id/signup_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/black_line"
+                android:visibility="gone" >
+
+                <!-- Name Field -->
+
+                <TextView
+                    android:id="@+id/name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/name_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/name_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Email id -->
+
+                <TextView
+                    android:id="@+id/email_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/email_loyal"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/email_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/email_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Password -->
+
+                <TextView
+                    android:id="@+id/password_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/password_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/password_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Mobile No -->
+
+                <TextView
+                    android:id="@+id/phoneno_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/phone_no_loyal"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/phoneno_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/phoneno_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Street Address -->
+
+                <TextView
+                    android:id="@+id/strt_address_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneno_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/streat_address"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phoneno_textview"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/strt_address_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/strt_address_textview"
+                    android:layout_marginLeft="100dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Area -->
+
+                <TextView
+                    android:id="@+id/area_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/strt_address_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/area"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/strt_address_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/area_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/area_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- City -->
+
+                <TextView
+                    android:id="@+id/city_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/area_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/city"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/area_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/city_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/city_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- State -->
+
+                <TextView
+                    android:id="@+id/state_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_textview"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/state"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/city_textview"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/double_quote"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/state_loyalty_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/state_textview"
+                    android:layout_marginLeft="80dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/state_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/mandatory_fields"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <!-- Button for sending the data to server -->
+
+                <Button
+                    android:id="@+id/send_signup_button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/state_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/brown_button"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="@string/signup"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <!-- Dumy text for increasing the view at bottom of forgot button -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/send_signup_button"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- Check in view -->
+
+            <RelativeLayout
+                android:id="@+id/rewards_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:visibility="gone" >
+
+                <!-- Rewards display -->
+
+                <TextView
+                    android:id="@+id/rewards_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="@string/reward_earned"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!-- Check in button -->
+
+                <Button
+                    android:id="@+id/rewards_checkin_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rewards_earned_textview"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/checkin"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="@string/checkin"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rewards_earned_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rewards_textview"
+                    android:layout_centerHorizontal="true"
+                    android:padding="20dp"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="100dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loyalty_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/username_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/username_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_details"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_word"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/password_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" >
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/brown_button"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/login_button"
+                android:background="@drawable/brown_button"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="@string/signup"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

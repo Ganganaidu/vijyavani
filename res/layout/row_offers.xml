@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/row_event_imageview"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/row_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/row_date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_name_textview"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/row_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row_date_textview"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:lines="2"
+        android:textSize="14dp"
+        android:textStyle="normal" />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

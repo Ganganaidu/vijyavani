@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Loyalty -->
+    <string name="username">Email Id</string>
+    <string name="pass_word">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="rewards">Rewards</string>
+    <string name="name">Name *</string>
+    <string name="double_quote">:</string>
+    <string name="email_loyal">Email ID *</string>
+    <string name="password">Password *</string>
+    <string name="phone_no_loyal">Phone *</string>
+    <string name="streat_address">Street Address</string>
+    <string name="area">Area *</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="mandatory_fields">Fields with * are mandatory.</string>
+    <string name="reward_earned">Total Loyalty Points </string>
+    <string name="checkin">Tap to Check-in</string>
+    <string name="login_sucess">Login sucessful !</string>
+    <string name="login_failed">Login failed !</string>
+    <string name="loyalty_added">Loyalty points added !</string>
+    <string name="loyalty_add_failed">Loyalty points adding failed !</string>
+    <string name="not_logedin">Please login !</string>
+    <string name="registerd">Registration sucessful !</string>
+    <string name="failed_registration">Registration failed !</string>
+    <string name="enter_area">Please enter area details !</string>
+    <string name="enter_phone">Please enter phone number !</string>
+    <string name="enter_name">Please enter name !</string>
+    <string name="enter_valid_email">Please enter valid Email id.</string>
+    <string name="enter_valid_password">Please enter valid details.</string>
+    <string name="error_username">Please enter correct username</string>
+    <string name="error_password">Please enter correct Password</string>
+    
+</resources>

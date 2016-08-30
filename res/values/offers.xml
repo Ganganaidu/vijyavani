@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- offers -->
+    <string name="no_offers">No offers available currently.</string>
+    <string name="offer_name">Name</string>
+    <string name="valid_from">Valid from</string>
+    <string name="valid_to">Valid to</string>
+    <string name="event_description">Description</string>
+
+</resources>

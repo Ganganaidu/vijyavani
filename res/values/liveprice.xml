@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Gold prices -->
+    <string name="spotgold">Spot Gold</string>
+    <string name="spotsilver">Spot Silver</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="usd_inr">USD/INR</string>
+    <string name="per_gm">Per gm</string>
+    <string name="per_kg">Per kg</string>
+    <string name="per_gm_50">Per 50 gm</string>
+    <string name="nine_nine_nine">999.0</string>
+    <string name="nine_one_six">916.6</string>
+    <string name="ruppe_symbol">`</string>
+    <string name="carrot">24ct</string>
+    <string name="carrot_twenty">22ct</string>
+    <string name="nowopen">Now Open</string>
+    <string name="dolor">$</string>
+
+</resources>
